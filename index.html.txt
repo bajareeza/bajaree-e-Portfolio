@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Portfolio | [นาย ศุภกร เสียงเปรม]</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, sans-serif; }
+        body { line-height: 1.6; color: #333; background-color: #f4f7f6; }
+        html { scroll-behavior: smooth; }
+        nav { background: #2c3e50; color: #fff; padding: 1rem 5%; position: sticky; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { font-size: 1.5rem; font-weight: bold; }
+        nav ul { list-style: none; display: flex; gap: 20px; }
+        nav ul li a { color: #fff; text-decoration: none; font-weight: 500; }
+        nav ul li a:hover { color: #3498db; }
+        header { background: linear-gradient(135deg, #3498db, #2c3e50); color: white; text-align: center; padding: 4rem 1rem; }
+        header img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 4px solid #fff; margin-bottom: 1rem; }
+        header h1 { font-size: 2.2rem; margin-bottom: 0.5rem; }
+        section { padding: 3rem 10%; max-width: 1100px; margin: auto; }
+        .section-header { text-align: center; margin-bottom: 2rem; }
+        h2 { color: #2c3e50; font-size: 1.8rem; border-bottom: 3px solid #3498db; display: inline-block; padding-bottom: 5px; }
+        .box { background: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .skills-grid { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 1rem; }
+        .skill-tag { background: #e1f0fa; color: #2980b9; padding: 5px 15px; border-radius: 20px; font-weight: bold; font-size: 0.9rem; }
+        .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .project-card { background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1); display: flex; flex-direction: column; }
+        .project-card img { width: 100%; height: 180px; object-fit: cover; }
+        .project-info { padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; }
+        .btn { display: inline-block; background: #3498db; color: #fff; padding: 8px 16px; text-decoration: none; border-radius: 5px; text-align: center; font-weight: bold; margin-top: 1rem; }
+        .btn:hover { background: #2980b9; }
+        footer { background: #2c3e50; color: #fff; text-align: center; padding: 2rem 1rem; margin-top: 2rem; }
+        footer a { color: #3498db; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">My Portfolio</div>
+        <ul>
+            <li><a href="#about">เกี่ยวกับฉัน</a></li>
+            <li><a href="#projects">ผลงานโค้ด</a></li>
+            <li><a href="#contact">ติดต่อ</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <!-- เปลี่ยน profile.jpg เป็นชื่อไฟล์รูปของคุณ -->
+        <img src="profile.jpg" alt="รูปโปรไฟล์">
+        <h1>สวัสดีครับ/ค่ะ ฉันชื่อ [นาย ศุภกร เสียงเปรม]</h1>
+        <p>นักเรียนชั้น [6/13] | [ธัญรัตน์]</p>
+    </header>
+
+    <section id="about">
+        <div class="section-header"><h2>เกี่ยวกับฉัน</h2></div>
+        <div class="box">
+            <p><strong>ประวัติส่วนตัว:</strong> [อยากเรียนรู้ด้าน Cyber Security เพื่อนำไปต่อยอดในอาชีพในอนาคต]</p>
+            <br>
+            <p><strong>ทักษะด้านเทคโนโลยี:</strong></p>
+            <div class="skills-grid">
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">GitHub</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-header"><h2>ผลงานด้านการเขียนโค้ด</h2></div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <!-- เปลี่ยน project1.png เป็นชื่อไฟล์รูปผลงานของคุณ -->
+                <img src="project1.png" alt="Mokeyproject1.png">
+                <div class="project-info">
+                    <div>
+                        <h3>[ลิง 1]</h3>
+                        <p>[ชอบลิงตัวนี้]</p>
+                    </div>
+                    <!-- ใส่ลิงก์ไปยังหน้าโค้ดผลงานของคุณบน GitHub -->
+                    <a href="https://github.com/[bajareeza]/[ชื่อลิงซ่า]" target="_blank" class="btn">ดูซอร์สโค้ด (Source Code)</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <h3>ช่องทางการติดต่อ</h3>
+        <p>อีเมล: [supakornwork2@gmail.com]</p>
+        <p>GitHub: <a href="https://github.com/[bajareeza]" target="_blank">github.com/[bajareeza]</a></p>
+    </footer>
+
+</body>
+</html>
